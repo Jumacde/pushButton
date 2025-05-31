@@ -24,7 +24,7 @@
             android:layout_gravity="fill_horizontal"
             android:background="@color/BrightGray"
             android:gravity="left|bottom"
-            android:text=""
+            android:text="Hello World!!"
             android:textColor="@color/black"
             android:textSize="30dp"/>
         <Button
