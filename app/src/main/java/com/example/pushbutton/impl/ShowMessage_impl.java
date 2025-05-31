@@ -19,6 +19,8 @@ public class ShowMessage_impl implements ShowMessage {
         return text;
     }
 
-    ;
-
+    @Override
+    public void setText(String text) {
+        this.text = text;
+    }
 }
