@@ -1,4 +1,24 @@
 package com.example.pushbutton.impl;
 
-public class ShowMessage_impl {
+import com.example.pushbutton.ShowMessage;
+
+public class ShowMessage_impl implements ShowMessage {
+    private String text;
+
+    public ShowMessage_impl() {
+        clear();
+    }
+
+    @Override
+    public void clear(){
+        this.text = "0";
+    }
+
+    @Override
+    public String getDisplay() {
+        return text;
+    }
+
+    ;
+
 }
