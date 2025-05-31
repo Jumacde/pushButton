@@ -18,13 +18,24 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="fill_horizontal"
             android:background="@color/BrightGray"
             android:gravity="left|bottom"
             android:text=""
+            android:textColor="@color/black"
             android:textSize="30dp"/>
+        <Button
+            android:id="@+id/b"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:onClick="pressB"
+            android:backgroundTint="@color/RipeMango"
+            android:text="Button"
+            android:layout_gravity="center"
+            android:textColor="@color/DeepJungleGreen"/>
 
     </LinearLayout>
 </LinearLayout>
