@@ -36,6 +36,16 @@
             android:text="Button"
             android:layout_gravity="center"
             android:textColor="@color/DeepJungleGreen"/>
+        <Button
+            android:id="@+id/bc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="pressBc"
+            android:backgroundTint="@color/Argent"
+            android:text="clear"
+            android:layout_gravity="center"
+            android:textColor="@color/DeepJungleGreen"/>
+
 
     </LinearLayout>
 </LinearLayout>

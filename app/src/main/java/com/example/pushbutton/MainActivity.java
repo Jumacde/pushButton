@@ -15,7 +15,7 @@ import com.example.pushbutton.impl.ShowMessage_impl;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
-    Button button;
+    Button meaageButton, clearButton;
     private ShowMessage showMessage;
 
     @Override
@@ -25,10 +25,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.text);
-        button = findViewById(R.id.b);
+        meaageButton = findViewById(R.id.b);
+        clearButton = findViewById(R.id.bc);
         showMessage = new ShowMessage_impl();
 
-        button.setOnClickListener(v -> handleOperatorClick((Button)v, "Button"));
+        meaageButton.setOnClickListener(bu -> buttonClick((Button)bu, "Button"));
+        clearButton.setOnClickListener(cbu -> clearButtonClick((Button)cbu, "clear"));
 
         /*
         * ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -39,9 +41,13 @@ public class MainActivity extends AppCompatActivity {
         * */
     }
 
-    private void handleOperatorClick(Button v, String button) {
+    private void buttonClick(Button bu, String buttonName) {
         showMessage.setText("Hello World!!");
         textView.setText(showMessage.getDisplay());
+    }
+
+    private void clearButtonClick(Button cbu, String buttonName) {
+
     }
 
 }
