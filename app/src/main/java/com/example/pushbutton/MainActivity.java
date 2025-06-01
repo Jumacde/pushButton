@@ -41,11 +41,13 @@ public class MainActivity extends AppCompatActivity {
         * */
     }
 
+    // show message if you push the button named "Button"
     private void buttonClick(Button bu, String buttonName) {
         showMessage.setText("Hello World!!");
         textView.setText(showMessage.getDisplay());
     }
 
+    // button clears the message"
     private void clearButtonClick(Button cbu, String buttonName) {
         showMessage.setText("");
         textView.setText(showMessage.getDisplay());
