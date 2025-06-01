@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clearButtonClick(Button cbu, String buttonName) {
-
+        showMessage.setText("");
+        textView.setText(showMessage.getDisplay());
     }
 
 }
