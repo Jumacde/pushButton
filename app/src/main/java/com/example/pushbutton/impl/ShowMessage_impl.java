@@ -11,7 +11,7 @@ public class ShowMessage_impl implements ShowMessage {
 
     @Override
     public void clear(){
-        this.text = "0";
+        this.text = "";
     }
 
     @Override
